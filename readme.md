@@ -3,7 +3,7 @@ Was bored one night, then i remembered that my friend  struggled with a school p
 But yeah.... would be nice with a more event-driven architecture and perhaps a more stricter mvc format.
 Graphics are fine :)
 
-- [ ] Fully functional mines, that dissapears after a while or when hit
+- [x] Fully functional mines, that dissapears after a while or when hit
 - [ ] Fully functional surface hunters
 - [ ] Game over screen
 - [ ] More gamey, ie score, timer etc
