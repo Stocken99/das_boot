@@ -27,3 +27,6 @@ function paint_environment() {
     strokeWeight(0)
     fill(0,0,0)
   }
+
+
+  
