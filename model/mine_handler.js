@@ -30,7 +30,7 @@ function closest_mine(){
 
 function check_for_spawn(){ // could us some randomness, but good for now
   is_time = (millis() - last_check)
-  if ((is_time) > 1000 + mine_alive * 1000){
+  if ((is_time) > 100 + mine_alive * 1000){
     if (mine_alive < 10){
       for (let i = 0; i < sea_mine_arr.length; i++){ // change to while loop?
         if (sea_mine_arr[i].activated === false){ 
@@ -41,10 +41,9 @@ function check_for_spawn(){ // could us some randomness, but good for now
       }
     }
     else { // deactivate first mine, and give new position
-      sea_mine_arr[0].activated = false
+      sea_mine_arr[millis()%10].activated = false
       get_location_for_mine(0)
     }
-    text("Inside check for spawn",200, 200)
     last_check = millis();
   }
 }
