@@ -46,7 +46,6 @@ function draw() {
 
 function game_over() {
   text("BOOT is dead", 120,90)
- // text(" x_boat: " + das_boot.x_position + " y_boat: " + das_boot.y_position + "\n Life: " + das_boot.health, 10, 30);
   debug_text()
 }
 
@@ -69,7 +68,7 @@ function debug_text(){
   //text(sea_mine_arr[0],400, 30)
   text("Total mines in game: " + mine_alive + " Total destroyers in game: nA", 10, 60)
   text(`Distance to closest {${das_boot.closest_mine}} mine: ` + distance_closest_mine,10, 75)
-  if (mine_alive > 0) { // doesnt really work when mine is not activated.........
+  if (mine_alive > 0) { // doesnt really work when mine is not activated......... 
     stroke(57,255,20)
     strokeWeight(2)
     line(das_boot.x_position+30,das_boot.y_position+15,sea_mine_arr[das_boot.closest_mine].x_position+30,sea_mine_arr[das_boot.closest_mine].y_position+15)

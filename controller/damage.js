@@ -10,7 +10,6 @@ function check_for_damage(){ // change to event based later
     return sub_damage_effect(type_of_damage)
 }
   
-  
 function sub_damage_effect(type_of_damage) { // just for different damages
     switch(type_of_damage){ 
     case 0: // botton
@@ -26,7 +25,7 @@ function sub_damage_effect(type_of_damage) { // just for different damages
     case 3: // aerieal bomb
         das_boot.health = das_boot.health - 30;
         break;
-    case -1: // aerieal bomb
+    case -1: // no damage
         break;
     }
     return check_if_alive()
